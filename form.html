@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" content = " width-"
+        <title>Form tag</title>
+    </head>
+
+    <body>
+        
+        <p>remember that the form tag is a semantic element.<br> It has no use in itself.</p>
+        <form>
+            <table>
+                <tr
+                <label for = "First Name">First Name</label>
+                <input type = "text" name = "First Name" placeholder="Enter first name"/><br>
+            </tr>
+            <tr><label for = "Last Name">Last Name</label>
+                <input type ="text" name = "Last Name" placeholder="Enter last name"/><br></tr>
+            <tr><label for = "email">Email</label>
+                <input type = "email" name = "email" placeholder="Please enter email"/><br></tr>
+            <tr><label for="Phone">Contact Number</label>
+                <input type="tel" name ="Phone" placeholder="Enter contact no." /><br></tr>
+            <tr> <label for="no">Date Of Birth</label>
+                <input type="date" name = "no" /><br></tr>
+            <tr><h4>Choose gender</h4></tr>
+                <tr><input type="radio" name="gender" id = "male"></tr>
+                   <tr><label for="male">male</label></tr>
+                <tr> <input type="radio" name="gender" id = "female"></tr>
+                    <tr><label for="female">female</label></tr>
+                <tr><input type="radio" name="gender" id = others></tr>
+                    <tr><label for="others">others</label><br>
+            </tr>
+            
+            
+            <tr><p>Select your preferable language</p>
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" name= "hindi"><br>
+            <label for="english">English</label>
+            <input type="checkbox" name="english"><br>
+            <label for="Japanese">Japanese</label>
+            <input type="checkbox" name = "Japanese"><br>
+            <br>
+            </tr>
+           <!--> new form elements which are added in HTML 5-->
+            <tr>
+            <p>Rate indian people</p>
+            <input type="range"><br>
+            </tr>
+            <tr>
+            <label for="Date">Date-Time</label>
+            <input type="datetime" name = "Date"><br>
+            </tr>
+            <tr>
+            <label for="currentDT">Current Date-Time</label>
+         
+            <input type="datetime-local" name = "currentDT"><br>
+        </tr>
+        <tr>
+            <label for = "password">Password</label>
+            <input type = "password" name = "password" placeholder="Type password"/><br>
+            </tr>
+            <tr><input type = "submit" /></tr>
+            
+        </table>
+        </form>
+        <ul>
+            <li>Whenever any element takes up entire width of the page: Block elements [div,h1,h2,etc]</li>
+            <li>Any element does not take up entire width of page and only the size that it requires, it is called as inline element or non block element</li>
+            <li>How do you bring the connection between what you see(frontend) and the backend(database), you use name tags in the forms for that very purpose.</li>
+            <li>getElementByName("First Name") -> used to capture the value using the name attribute given to the input element</li>
+            <li>email type input is self validating!</li>
+            <li>To show background text so we can add placeholder in the input tag</li>
+            <li>For radio inputs, name should be common but id and value should differ.</li>
+            <li>"id" is used for differentitaion. "value" is used for telling is what value will it hold</li>
+            <li>for attribute can use both name as well as id</li>
+            <li>The value of text type input is stored by default using the getElementByName, <br>But the value of checkbuttons are stored using the ID or Name of them buttons</li>
+        </ul>
+    </body>
+</html>
