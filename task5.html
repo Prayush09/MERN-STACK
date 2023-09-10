@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* Center the entire form */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .login-row {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstName" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastName" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td><input type="password" name="rePassword" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phoneNumber" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="Usa">Usa</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Russia">Russia</option>
+                        <option value="England">England</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td>
+                    <input type="radio" name="languagesKnown" value="English"> English
+                    <input type="radio" name="languagesKnown" value="Kannada"> Kannada
+                    <input type="radio" name="languagesKnown" value="Hindi"> Hindi
+                    <input type="radio" name="languagesKnown" value="Telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" required>
+                    Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr class="login-row">
+                <th colspan="2">
+                    Log in to <a href="https://learn.codemithra.com" target="_blank">Ethnus</a> Website
+                </th>
+            </tr>
+        </table>
+        
+        <div style="text-align: center;">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
+

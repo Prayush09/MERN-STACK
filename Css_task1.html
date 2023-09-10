@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Table</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            color: teal;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-radius: 10px; /* Add rounded borders */
+            overflow: hidden; /* Hide overflow for rounded corners */
+        }
+
+        th, td {
+            border: 1px solid teal;
+            border-radius: 10px; /* Teal border color */
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightcyan; /* Alternate row background color */
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightblue; /* Alternate row background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>
